@@ -135,16 +135,41 @@ std::istream& operator>>(std::istream& input, vector3D& v) {
     return input;
 }
 
+bool read_args(vector3D& v1, vector3D& v2, double& number) {
+    bool to_return = true;
+    std::string x1, x2, y1, y2, z1, z2, c;
+    std::cout << "Введите вектор a" << std::endl;
+    std::cin >> x1 >> y1 >> z1;
+    std::cout << "Введите вектор b" << std::endl;
+    std::cin >> x2 >> y2 >> z2;
+    std::cout << "Введите число с" << std::endl;
+    std::cin >> c;
+
+    try {
+        v1.x() = std::stod(x1);
+        v1.y() = std::stod(y1);
+        v1.z() = std::stod(z1);
+
+        v2.x() = std::stod(x2);
+        v2.y() = std::stod(y2);
+        v2.z() = std::stod(z2);
+
+        number = std::stod(c);
+    }
+    catch (std::exception& ex) {
+		std::cerr << ex.what() << std::endl;
+        to_return = false;
+	}
+    return to_return;
+}
+
 int main(int argc, const char * argv[]) {
     vector3D a,b;
     double c;
-    std::cout << "Введите вектор a" << std::endl;
-    std::cin >> a;
-    std::cout << "Введите вектор b" << std::endl;
-    std::cin >> b;
-    std::cout << "Введите число с" << std::endl;
-    
-    std::cin >> c;
+    if (!read_args(a, b, c)) {
+        std::cout << "Некорректный ввод" << std::endl;
+        return 1;
+    }
     
     std::cout << "a = " << a << std::endl;
     std::cout << "b = " << b << std::endl;

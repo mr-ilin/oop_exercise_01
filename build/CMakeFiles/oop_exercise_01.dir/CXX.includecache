@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/mr-ilin/Documents/Labs/oop/oop_exercise_01/main.cpp
+iostream
+-
+cmath
+-
+vector
+-
+stdlib.h
+-
+
