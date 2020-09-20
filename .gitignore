@@ -50,6 +50,8 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
+./build/*
+
 ### CMake Patch ###
 # External projects
 *-prefix/
@@ -84,11 +86,6 @@ Temporary Items
 
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
