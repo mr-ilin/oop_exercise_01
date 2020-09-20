@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/mr-ilin/Documents/Labs/oop/oop_exercise_01/build",
-  "command": "/usr/bin/clang++   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=c++11 -o CMakeFiles/oop_exercise_01.out.dir/main.cpp.o -c /Users/mr-ilin/Documents/Labs/oop/oop_exercise_01/main.cpp",
-  "file": "/Users/mr-ilin/Documents/Labs/oop/oop_exercise_01/main.cpp"
-}
-]
